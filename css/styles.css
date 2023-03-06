@@ -1,0 +1,41 @@
+/* colors palette */
+:root{
+    --primary-text-color: #21243D;
+    --accent-color:#FF6464;
+    --background-color:#fff;
+    --secondary-text-color:#000;
+    --posts-section-bg: #EDF7FA;
+    --view-btn-color:#00A8CC;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+/* header-section styles */
+.nav-item{
+    color:var(--secondary-text-color);
+}
+.nav-item:hover, .nav-item:focus{
+    color: var(--accent-color);
+}
+
+/* section hero */
+.hero-btn{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
+
+
+/* section-posts */
+.post-container{
+    background-color: var(--posts-section-bg);
+}
+
+.post-btn{
+    color: var(--view-btn-color);
+}
+.post-item{
+    background-color: var(--background-color);
+}

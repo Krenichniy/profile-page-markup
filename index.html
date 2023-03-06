@@ -4,52 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/styles.css">
     <title>My profile page</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/"></a>Works</li>
-                <li><a href="/"></a>Blog</li>
-                <li><a href="/"></a>Contact</li>
+        <nav class="nav-menu">
+            <ul class="nav-container">
+                <li class="nav-item"><a href="/">Works</a></li>
+                <li class="nav-item"><a href="/blog.html">Blog</a></li>
+                <li class="nav-item"><a href="/">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- Section hero -->
-        <section>
-            <h1>
+        <section class="hero-wrapper">
+            <h1 class="hero-title">
                 Hi, I am John,
                 Creative Technologist
             </h1>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <img src="./images/profile_photo.jpg" alt="My photo"/>
-            <button type="button">
+            <p class="hero-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <img src="./images/profile_photo.jpg" alt="My photo" class="hero-img"/>
+            <button type="button" class="hero-btn">
                 Download Resume
             </button>
         </section>
         <!-- Section post -->
-        <section>
-            <h2>Recent posts</h2>
-            <button type="button">
+        <section class="post-container">
+            <h2 class="post-title"> Recent posts</h2>
+            <button type="button" class="post-btn">
                 View all
             </button>
-            <ul>
-                <li>
-                    <h3>Making a design system from scratch</h3>
-                    <div>
-                        <span>12 Feb 2020</span>
-                        <span>Design, Pattern</span>
+            <ul class="post-list">
+                <li class="post-item">
+                    <h3 class="post-item-title">Making a design system from scratch</h3>
+                    <div class="post-item-wrapper">
+                        <span class="post-item-date">12 Feb 2020</span>
+                        <span class="post-item-theme">Design, Pattern</span>
                     </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <p  class="post-item-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </li>
-                <li>
-                    <div>
-                        <span>12 Feb 2020</span>
-                        <span>Figma, Icon Design</span>
+                <li class="post-item">
+                    <h3 class="post-item-title">Creating pixel perfect icons in Figma</h3>
+                    <div class="post-item-wrapper">
+                        <span class="post-item-date">12 Feb 2020</span>
+                        <span class="post-item-theme">Figma, Icon Design</span>
                     </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <p class="post-item-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </li>
             </ul>
         </section>
