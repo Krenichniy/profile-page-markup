@@ -6,6 +6,9 @@
     --secondary-text-color:#000;
     --posts-section-bg: #EDF7FA;
     --view-btn-color:#00A8CC;
+    --works-dates-bgc-color:#142850;
+    --works-type-color:#8695A4;
+    --works-line-color :#E0E0E0;
 }
 
 body{
@@ -38,4 +41,23 @@ body{
 }
 .post-item{
     background-color: var(--background-color);
+}
+
+/* works section */
+
+.works-item-class{
+    color: var(--works-type-color);
+}
+
+.works-item-date{
+    background-color:var(--works-dates-bgc-color);
+    color: var(--background-color);
+}
+
+/* footer section */
+
+.footer-link:hover .footer-icon,
+.footer-link:focus .footer-icon{
+    fill: var(--accent-color);
+    cursor: pointer;
 }
