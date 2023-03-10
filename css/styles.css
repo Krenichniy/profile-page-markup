@@ -1,4 +1,5 @@
 /* colors palette */
+
 :root{
     --primary-text-color: #21243D;
     --accent-color:#FF6464;
@@ -17,10 +18,14 @@ body{
 }
 
 /* header-section styles */
-.nav-item{
+.nav-item, .header-item{
     color:var(--secondary-text-color);
 }
 .nav-item:hover, .nav-item:focus{
+    color: var(--accent-color);
+}
+
+.header-item:hover, .header-item:focus{
     color: var(--accent-color);
 }
 
@@ -45,7 +50,7 @@ body{
 
 /* works section */
 
-.works-item-class{
+.works-item-class, .blog-item-theme{
     color: var(--works-type-color);
 }
 
@@ -62,4 +67,12 @@ body{
     cursor: pointer;
 }
 
-/* test */
+.blog-footer-item-link:hover .blog-footer-icon,
+.blog-footer-item-link:focus .blog-footer-icon{
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+
+.header-item-blog{
+    color:var(--accent-color) ;
+}
