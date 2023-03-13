@@ -10,16 +10,39 @@
     --works-dates-bgc-color:#142850;
     --works-type-color:#8695A4;
     --works-line-color :#E0E0E0;
+
+    --fw-extra-bold: 900;
+    --fw-bold: 700;
+    --fw-medium: 500;
+
+    --fs-large:44px;
+    --fs-medium:30px;
+
 }
 
 body{
     background-color: var(--background-color);
     color: var(--primary-text-color);
+    
+    font-family: 'Heebo';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* header-section styles */
 .nav-item, .header-item{
     color:var(--secondary-text-color);
+}
+.nav-item,
+.header-item, .hero-btn {
+    font-weight: var(--fw-medium);
+}
+.nav-item,
+.header-item,
+.hero-btn,  .works-item-class {
+    font-size: 20px;
+    line-height: 1.45;
 }
 .nav-item:hover, .nav-item:focus{
     color: var(--accent-color);
@@ -27,6 +50,11 @@ body{
 
 .header-item:hover, .header-item:focus{
     color: var(--accent-color);
+}
+.hero-title{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-large);
+    line-height: 1.36;
 }
 
 /* section hero */
@@ -40,12 +68,25 @@ body{
 .post-container{
     background-color: var(--posts-section-bg);
 }
-
+.post-title, .works-title{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 2.73;
+}
 .post-btn{
     color: var(--view-btn-color);
 }
 .post-item{
     background-color: var(--background-color);
+}
+.post-item-title{
+    font-weight: var(--fw-bold);
+    font-size: 26px;
+    line-height: 1.46;
+}
+.post-item-wrapper{
+    font-size: 18px;
+    line-height: 1.44;
 }
 
 /* works section */
@@ -57,6 +98,14 @@ body{
 .works-item-date{
     background-color:var(--works-dates-bgc-color);
     color: var(--background-color);
+    font-weight: var(--fw-extra-bold);
+    font-size: 18px;
+    line-height: 3.33;
+}
+.works-item-title{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-medium);
+    line-height: 1.46;
 }
 
 /* footer section */
@@ -67,12 +116,17 @@ body{
     cursor: pointer;
 }
 
+.footer-title{
+    font-size: 14px;
+}
+
+/* Blog page styles */
 .blog-footer-item-link:hover .blog-footer-icon,
-.blog-footer-item-link:focus .blog-footer-icon{
+.blog-footer-item-link:focus .blog-footer-icon {
     fill: var(--accent-color);
     cursor: pointer;
 }
 
-.header-item-blog{
-    color:var(--accent-color) ;
+.header-item-blog {
+    color: var(--accent-color);
 }
