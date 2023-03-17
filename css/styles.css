@@ -41,7 +41,10 @@ body{
 .nav-item,
 .header-item,
 .header-item-blog,
-.hero-btn,  .works-item-class {
+.hero-btn, 
+.works-item-class,
+.blog-item-date,
+.blog-item-theme {
     font-size: 20px;
     line-height: 1.47;
 }
@@ -70,7 +73,6 @@ body{
     background-color: var(--posts-section-bg);
 }
 .post-title, .works-title{
-    font-weight: 400;
     font-size: 22px;
     line-height: 2.73;
 }
@@ -133,12 +135,8 @@ body{
 }
 
 .blog-item-title{
-    font-weight: 500;
+    font-weight: var(--fw-medium);
     font-size: 30px;
     line-height: 1.46;
 }
 
-.blog-item-date, .blog-item-theme{
-    font-size: 20px;
-    line-height: 1.47;
-}
