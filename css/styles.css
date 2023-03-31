@@ -32,6 +32,18 @@ body{
 .container{
     width: 1200px;
     padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item:not(:first-child){
+    margin-left: 33px;
 }
 
 /* header-section styles */
@@ -59,6 +71,29 @@ body{
 .header-item:hover, .header-item:focus{
     color: var(--accent-color);
 }
+
+.hero-wrapper{
+    padding-top: 140px;
+    padding-bottom: 71px;
+}
+
+.hero-main-content{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.hero-title{
+    width: 446px;
+}
+
+.hero-text{
+    margin-top: 40px;
+    width: 497px;
+}
+
+
 .hero-title, .blog-title {
     font-weight: var(--fw-bold);
     font-size: var(--fs-large);
@@ -67,6 +102,9 @@ body{
 
 /* section hero */
 .hero-btn{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 2px;
     color: var(--background-color);
     background-color: var(--accent-color);
 }
