@@ -29,9 +29,13 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
+.container .nav-container:nth-child(2){
+    color:teal;
+}
 .container{
     width: 1200px;
     padding: 0 15px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,6 +53,7 @@ body{
 /* header-section styles */
 .nav-item, .header-item{
     color:var(--secondary-text-color);
+    height: 30px;
 }
 
 .nav-item,
@@ -112,40 +117,97 @@ body{
 
 /* section-posts */
 .post-container{
+    padding-top: 27px;
+    padding-bottom: 32px;
     background-color: var(--posts-section-bg);
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+}
+.post-list{
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+    /* justify-content: space-between; */
+    margin-top: 20px;
 }
 .post-title, .works-title{
     font-size: 22px;
     line-height: 2.73;
 }
 .post-btn{
+    background: transparent;
+    outline: none;
+    cursor: pointer;
     color: var(--view-btn-color);
 }
 .post-item{
+    flex-basis: calc(100% / 2 - 20px);
+    padding: 23px;
+    margin-left: 20px;
     background-color: var(--background-color);
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
 }
+/* .post-item:not(:first-child) {
+        margin-left: 20px;
+} */
 .post-item-title{
     font-weight: var(--fw-bold);
     font-size: 26px;
     line-height: 1.46;
 }
 .post-item-wrapper{
+    margin-top: 17px;
     font-size: 18px;
     line-height: 1.44;
 }
+.post-item-date{
+    padding-right: 31px;
+    border-right: 1px solid #000;
+
+}
+.post-item-theme{
+    margin-left: 26px;
+}
+.post-item-text{
+    margin-top: 11px;
+}
 
 /* works section */
-
+.works-list{
+    margin-top: 22px;
+}
+.works-item{
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.works-item:not(:first-child) {
+    margin-top: 30px;
+}
+.works-item-main{
+    margin-left: 18px;
+}
 .works-item-class, .blog-item-theme{
     color: var(--works-type-color);
 }
+.works-item-info, .works-item-text{
+    margin-top: 16px;
+}
 
 .works-item-date{
+    padding: 5px 10.5px;
+    border-radius: 16px;
     background-color:var(--works-dates-bgc-color);
     color: var(--background-color);
     font-weight: var(--fw-extra-bold);
     font-size: 18px;
     line-height: 3.33;
+}
+.works-item-class{
+    margin-left: 26px;
 }
 .works-item-title{
     font-weight: var(--fw-bold);
