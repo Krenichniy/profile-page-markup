@@ -40,6 +40,10 @@ body{
     margin-right: auto;
 }
 
+.header-section{
+    padding-top: 27px;
+}
+
 .nav-container{
     display: flex;
     justify-content: flex-end;
@@ -57,12 +61,11 @@ body{
 }
 
 .nav-item,
-.header-item, .header-item-blog, .hero-btn {
+.header-item, .hero-btn {
     font-weight: var(--fw-medium);
 }
 .nav-item,
 .header-item,
-.header-item-blog,
 .hero-btn, 
 .works-item-class,
 .blog-item-date,
@@ -129,7 +132,6 @@ body{
     display: flex;
     align-items: center;
     margin-left: -20px;
-    /* justify-content: space-between; */
     margin-top: 20px;
 }
 .post-title, .works-title{
@@ -179,7 +181,7 @@ body{
 .works-list{
     margin-top: 22px;
 }
-.works-item{
+.works-item,{
     display: flex;
     padding-bottom: 15px;
     border-bottom: 1px solid #E0E0E0;
@@ -193,7 +195,7 @@ body{
 .works-item-class, .blog-item-theme{
     color: var(--works-type-color);
 }
-.works-item-info, .works-item-text{
+.works-item-info, .works-item-text,.blog-item-text{
     margin-top: 16px;
 }
 
@@ -217,6 +219,11 @@ body{
 
 /* footer section */
 
+.footer-section{
+    padding-top: 134px;
+    padding-bottom: 54px;
+}
+
 .footer-link:hover .footer-icon,
 .footer-link:focus .footer-icon{
     fill: var(--accent-color);
@@ -224,7 +231,15 @@ body{
 }
 
 .footer-title{
+    margin-top: 26px;
     font-size: 14px;
+    padding-left: 400px;
+}
+
+.footer-list{
+    display: flex;
+    column-gap: 35px;
+    justify-content: center;
 }
 
 /* Blog page styles */
@@ -234,8 +249,31 @@ body{
     cursor: pointer;
 }
 
-.header-item-blog {
+.blog-header-section{
+    padding-top: 25px;
+}
+
+.header-item:first-child {
     color: var(--accent-color);
+}
+
+.header-list{
+    display: flex;
+    justify-content: end;
+}
+
+.header-item:not(:first-child){
+    margin-left: 37px;
+}
+
+.main-blog-section{
+    padding-top: 106px;
+}
+
+.blog-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
 }
 
 .blog-item-title{
@@ -244,3 +282,34 @@ body{
     line-height: 1.46;
 }
 
+.blog-item{
+    width: 900px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.blog-item-wrapper{
+    margin-top: 6px;
+}
+
+.blog-item-date{
+    padding-right: 26.5px;
+    border-right: 1px solid #000000;
+}
+
+.blog-item-theme{
+    margin-left: 21px;
+}
+
+.blog-footer-list{
+    display: flex;
+    padding-left: 400px;
+}
+
+.blog-footer-item:not(:first-child){
+    margin-left: 35px;
+}
+
+.blog-footer-section{
+    padding-top: 104px;
+}
