@@ -181,7 +181,7 @@ body{
 .works-list{
     margin-top: 22px;
 }
-.works-item,{
+.works-item{
     display: flex;
     padding-bottom: 15px;
     border-bottom: 1px solid #E0E0E0;
